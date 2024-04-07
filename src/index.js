@@ -1,12 +1,13 @@
 console.log('Hello');
 import './style.css';
 
-import { initialpageload } from "./pageload.js";
-import { menutab } from "./menu.js";
-import { abouttab } from "./about.js";
+import { createPage } from "./home.js";
+import { menu} from "./menu.js";
+import { contact } from "./contact.js";
 
-document.getElementById("homeButton").addEventListener("click", home);
+document.getElementById("homeButton").addEventListener("click", createPage);
+window.addEventListener("load", createPage);
 
-document.getElementById("menuButton").addEventListener("click", menutab);
+document.getElementById("menuButton").addEventListener("click", menu);
 
-document.getElementById("aboutButton").addEventListener("click", abouttab);
+document.getElementById("contactButton").addEventListener("click", contact);
