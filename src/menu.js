@@ -1,6 +1,8 @@
+export  function createMenuPage(){
+console.log('I am working');
 const menuArray = [];
-const content = document.querySelector('.content');
-
+const content = document.getElementById('content');
+content.innerHTML=' ';
 class MenuItem {
   constructor(title, price) {
     this.title = title;
@@ -8,7 +10,7 @@ class MenuItem {
   }
   
   info() {
-    return `${this.title} ${this.price}`;
+    return `${this.title} .....$ ${this.price}`;
   }
 }
 
@@ -36,3 +38,4 @@ for (let i = 0; i < menuArray.length; i++) {
 }
 
 content.appendChild(menuCard);
+}
