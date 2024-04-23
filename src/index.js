@@ -6,7 +6,7 @@ import { createMenuPage} from "./menu.js";
 import { createContactPage } from "./contact.js";
 
 document.getElementById("homeButton").addEventListener("click", createPage);
-//window.addEventListener('load',createPage);
+window.addEventListener('DOMContentLoaded',createPage);
 
 document.getElementById("menuButton").addEventListener("click", createMenuPage);
 
